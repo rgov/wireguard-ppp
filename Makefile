@@ -1,5 +1,4 @@
 CC ?= cc
-CLANG_FORMAT ?= clang-format
 BUILD ?= build
 CPPFLAGS += -Isrc -Iwireguard-lwip/src -Ilwip/src/include
 CFLAGS ?= -O2 -g
@@ -45,7 +44,6 @@ SRCS = \
     src/platform.c
 
 OBJECTS = $(SRCS:%.c=$(BUILD)/%.o)
-FORMAT_SRCS = $(wildcard compat/*.h src/*.c src/*.h src/arch/*.h tests/*.c)
 
 .PHONY: all clean
 all: $(BUILD)/wg-ppp

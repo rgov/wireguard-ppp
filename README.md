@@ -4,7 +4,7 @@
 > Prefer using mainline kernel WireGuard support (Linux 5.6+), the [out-of-tree module][wireguard-linux-compat] (Linux 3.10 – 5.5), or the official userspace implementation, [wireguard-go][].
 
 
-# WireGuard PPP interface
+# Point-to-Point Protocol (PPP) Adapter for WireGuard
 
 This project implements a userspace [WireGuard][] endpoint for Linux systems with Point-to-Point Protocol (PPP) support.
 
